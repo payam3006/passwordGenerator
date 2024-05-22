@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passwordGenerator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <h1>password Generator</h1>
+        <div id="show" class="show">
+            <div id="pass"></div>
+            <div id="message" style="color: yellow;"></div>
+            <div class="copyBtn" onclick="copyText()">!</div>
+        </div>
+        <label for="passwordLength">
+            Password Length
+            <input id="passwordLength" type="number" value="20" min="4">
+        </label>
+        <label for="upperCase">
+            include upperCase letters
+            <input id="upperCase" type="checkbox" checked>
+        </label>
+        <label for="lowerCase">
+            include lowerCase letters
+            <input id="lowerCase" type="checkbox" checked>
+        </label>
+        <label for="numbers">
+            include numbers
+            <input id="numbers" type="checkbox" checked>
+        </label>
+        <label for="symbols">
+            include symbols
+            <input id="symbols" type="checkbox" checked>
+        </label>
+        <div class="btn" onclick="generatePass()">Generate Password</div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

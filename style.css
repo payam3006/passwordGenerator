@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(98, 0, 255);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+.main {
+  background-color: hsl(0, 0%, 0%, 0.5);
+  box-shadow: 0 0 30px rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  width: 70vmin;
+}
+
+.show {
+  background-color: hsl(0, 0%, 0%, 0.5);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 10px;
+  font-size: larger;
+}
+
+.copyBtn {
+  position: absolute;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(98, 0, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+label {
+  margin-top: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+input {
+  position: absolute;
+  right: 0;
+}
+#passwordLength {
+  width: 35px;
+}
+
+.btn {
+  background-color: rgb(98, 0, 255);
+  text-align: center;
+  margin: 40px 0 20px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
